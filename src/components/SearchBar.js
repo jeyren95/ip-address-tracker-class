@@ -20,24 +20,21 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <section id="search-bar">
-        <div className="ui container">
-          <h1>IP Address Tracker</h1>
-          <div className="search-input">
-            <form onSubmit={this.onFormSubmit} className="ui form">
-              <div className="field">
-                <input
-                type="text"
-                placeholder="Search for any IP address or domain"
-                value={this.state.term}
-                onChange={this.onInputChange}
-                />
-                <button className="ui button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
-              </div>
-            </form>
-          </div>
+      <div className="search-bar">
+        <h1>IP Address Tracker</h1>
+        <div className="search-input">
+          <form onSubmit={this.onFormSubmit} className="form">
+            <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+            value={this.state.term}
+            onChange={this.onInputChange}
+            />
+            <button className="button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+          </form>
         </div>
-      </section>
+
+      </div>
     )
   }
 

@@ -26,6 +26,7 @@ class App extends React.Component {
           }
         });
 
+      console.log(userDetails.data.ip)
       this.setState({
         ip: userDetails.data.ip,
         city: userDetails.data.location.city,
@@ -48,7 +49,7 @@ class App extends React.Component {
         params: {
           apiKey: "at_QosYiQaRR8nXdU1zd7lgXP0fAXBxC",
           ipAddress: term,
-          domain: term 
+          domain: term
         }
       });
 
